@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilos para el contenedor de la página */
+        .container {
+            display: flex;
+        }
+
+        /* Estilos para el menú de navegación */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #df9fdf;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #800080;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #444;
+        }
+
+        /* Estilos para la primera columna */
+        .column {
+            flex: 1; /* El contenido se divide en partes iguales */
+            padding: 20px;
+        }
+
+        /* Estilos para la segunda columna */
+        .column:nth-child(2) {
+            background-color: #df9fdf; /* Color de fondo de la segunda columna */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Convocatorias</a></li>
+        <li><a href="#">Archivo</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Agenda</a></li>
+    </ul>
+
+    <div class="container">
+        <!-- Primera columna -->
+        <div class="column">
+            <h2>Columna 1</h2>
+            <p>Contenido de la primera columna.</p>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="column">
+            <h2>Columna 2</h2>
+            <p>Contenido de la segunda columna.</p>
+        </div>
+    </div>
+</body>
+</html>
